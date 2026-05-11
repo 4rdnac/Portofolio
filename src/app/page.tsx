@@ -172,19 +172,21 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* PROYEK 1: Agrismart */}
+            {/* PROYEK 1: Agrismart (DIPERBAIKI) */}
             <div className="flex flex-col overflow-hidden transition-all bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1">
               <a
                 href="https://github.com/JihaR15/ptt-agrismart"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative flex items-center justify-center h-56 transition bg-slate-100 overflow-hidden group"
+                // Ubah: Menambahkan bg-slate-100 dan padding p-4 agar gambar utuh dan punya bingkai
+                className="relative flex items-center justify-center h-56 transition bg-slate-100 overflow-hidden p-4 group"
               >
                 <Image
                   src="/proyek1.png"
                   alt="Agrismart - IoT Plant Monitoring"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  // Ubah: Ganti object-cover menjadi object-contain
+                  className="object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </a>
 
@@ -218,7 +220,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* PROYEK 2: RuangWarga RT/RW */}
+            {/* PROYEK 2: RuangWarga RT/RW (Sudah Benar) */}
             <div className="flex flex-col overflow-hidden transition-all bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1">
               <a
                 href="https://github.com/pblkelompok1/ti3h_k1_jawara"
@@ -265,19 +267,21 @@ export default function Home() {
               </div>
             </div>
 
-            {/* PROYEK 3: STARS */}
+            {/* PROYEK 3: STARS (DIPERBAIKI) */}
             <div className="flex flex-col overflow-hidden transition-all bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1">
               <a
                 href="https://github.com/Noklent-Fardian/STARS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative flex items-center justify-center h-56 transition bg-slate-100 overflow-hidden group"
+                // Ubah: Menambahkan bg-slate-100 dan padding p-4 agar gambar utuh dan punya bingkai
+                className="relative flex items-center justify-center h-56 transition bg-slate-100 overflow-hidden p-4 group"
               >
                 <Image
                   src="/proyek3.png"
                   alt="STARS"
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  // Ubah: Ganti object-cover menjadi object-contain
+                  className="object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </a>
 
@@ -290,7 +294,7 @@ export default function Home() {
                   mengelola, dan memantau rekam jejak data prestasi siswa.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-5">
-                  {["Web App", "Database", "Management"].map((tag) => (
+                  {["Laravel", "Bootstrap", "JavaScript"].map((tag) => (
                     <span
                       key={tag}
                       className="px-2.5 py-1 text-xs font-semibold text-blue-700 bg-blue-50 rounded-md"
@@ -349,9 +353,7 @@ export default function Home() {
 
       {/* --- FOOTER --- */}
       <footer className="py-8 text-center text-sm font-medium text-slate-500 bg-white border-t border-slate-200">
-        <p>
-          © {new Date().getFullYear()} Candra Ahmad Dani.
-        </p>
+        <p>© {new Date().getFullYear()} Candra Ahmad Dani.</p>
       </footer>
     </main>
   );
